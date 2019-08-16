@@ -1,0 +1,59 @@
+body{
+	background: #4a5f75;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #04b591;
+    border-color: #0ab795;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #04b591;
+    border-color: #037d65;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 3px rgba(4, 180, 144, 0.28);
+}
+
+.btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+    background-color: #0daf8e;
+    background-image: none;
+    border-color: #0fb594;
+}
+
+a{
+	color: #38f1cb;
+}
+
+a:hover{
+	color: #87ffe6;
+}
+
+.inf{
+	color: #fff;
+}
+
+.form-group label {
+    width: 100%;
+    color: #fff;
+}
+
+.checkmark{
+	background: #fff;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #04b49073;
+    outline: 0;
+}
+
+.footer {
+    margin: 40px 0;
+    color: #fff;
+    text-align: center;
+}

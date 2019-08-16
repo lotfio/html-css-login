@@ -1,0 +1,143 @@
+html,body {
+	height: 100%;
+}
+
+body{
+	background-color: #f7f9fb;
+	font-size: 14px;
+}
+
+.brand {
+	margin: 60px auto 0;
+	box-shadow: 0 0 40px rgba(0,0,0,.05);
+}
+.brand-reset{
+	margin: 0 auto;
+}
+
+.brand img {
+	width: 100%;
+}
+
+.card-wrapper {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.card {
+	border-color: transparent;
+	background: transparent;
+}
+
+.card.fat {
+	padding: 10px;
+}
+
+.card .card-title {
+	margin-bottom: 30px;
+}
+
+.form-control {
+	border-width: 2.3px;
+}
+
+.form-group label {
+	width: 100%;
+}
+
+.btn.btn-block {
+	padding: 12px 10px;
+	cursor: pointer;
+}
+
+.margin-top20 {
+	margin-top: 20px;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.footer {
+	margin: 40px 0;
+	color: #888;
+	text-align: center;
+}
+
+
+.chek {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 13px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.chek input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	border: 2px solid #d2d4d6;
+	border-radius: 2px;
+}
+
+.chek:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.chek input:checked ~ .checkmark {
+	background-color: #ccc;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.chek input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.chek .checkmark:after {
+	left: 3px;
+	top: -2px;
+	width: 10px;
+	height: 15px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+@media screen and (max-width: 425px) {
+	.card-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.card.fat {
+		padding: 0;
+	}
+
+	.card.fat .card-body {
+		padding: 15px;
+	}
+}
